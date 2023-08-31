@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script defer src="js/script.js"></script>
+
+  <div class="sidebar">
+    <div class="logo">
+      <a href="#">
+        <img src="img/Ropetfy.png" alt="Logo" />
+      </a>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li>
+          <a href="#">
+            <span class="fa fa-home"></span>
+            <span>Ana Menu</span>
+          </a>
+        </li>
+        <div class="navigation">
+          <ul>
+            <li>
+              <div class="search-container">
+                <input type="text" id="searchInput" class="search-box" placeholder="Şarkı adı...">
+      
+                </button>
+              </div>
+              
+            </li>
+          </ul>
+        </div>
+        
+        <li>
+          <a href="#" id="about-button">
+            <span class="fa fas fa-book"></span>
+            <span>Hakkında</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" id="recommendation-button">
+            <span class="fa fas fa-heart"></span>
+            <span>Öneri</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+
+    <div class="policies">
+      <ul>
+        <li style="color: rgb(71, 40, 80);">
+          Ropetfy &copy; Tüm Hakları Saklıdır
+        </li>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="topbar">
+      <div class="prev-next-buttons">
+        <button type="button" class="fa fas fa-chevron-left"></button>
+        <button type="button" class="fa fas fa-chevron-right"></button>
+      </div>
+
+      <div class="navbar">
+        <ul>
+    
+          <li>
+            <a href="#">Download</a>
+          </li>
+    
+          <li>
+         
+          </li>
+        </ul>
+ 
+      </div>
+    </div>
+
+    <div class="ropetfy-playlists">
+      <h2>Ropetfy Karışık Playlist</h2>
+
+        <div class="list">
+          <div class="item">
+            <img src="img/img_1.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Cehennem</h4>
+            <p>Reynmen'in müziği</p>
+            <audio id="music1" src="song/Reynmen-CEHENNEM-_-Official-Music-Video-_.mp3"></audio>
+          </div>
+          
+          <div class="item">
+            <img src="img/img_2.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Cuppa Cuppa</h4>
+            <p>Tarkan'ın müziği</p>
+            <audio id="music2" src="song/TARKAN-Cuppa.mp3"></audio>
+          </div>
+
+          <div class="item">
+            <img src="img/img_3.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Barbie Girl</h4>
+            <p>Aqua'nın müziği</p>
+            <audio id="music3" src="song/Aqua-Barbie-Girl-_Official-Music-Video_.mp3"></audio>
+          </div>
+
+          <div class="item">
+            <img src="img/img_4.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>AL Aramızdan</h4>
+            <p>KÖFN'nin müziği</p>
+            <audio id="music4" src="song/KÖFN-Al-Aramızdan-_Official-Video_.mp3"></audio>
+
+          </div>
+
+          <div class="item">
+            <img src="img/img_5.jpg" />
+            <div class="play">
+              <span class="fa fa-play"></span>
+            </div>
+            <h4>Demet Akalın</h4>
+            <p>Ben Fero'nun müziği</p>
+            <audio id="music5" src="song/Ben-Fero-Demet-Akalın-_Official-Video_.mp3"></audio>
+          </div>
+
+
+
+          </div>
+        </div>
+
+        <hr>
+      </div>
+
+
+
+      <div class="about-section" style="display: none;">
+        <h2>Hakkında</h2>
+        <p>Hoş geldiniz! Ropetfy, en sevdiğiniz şarkıları dinlemeniz için tasarlanmış bir platformdur. Müziğin tadını çıkarın ve unutulmaz anlarınızı paylaşın.</p>
+      </div>
+  
+      <div class="recommendation-section" style="display: none;">
+        <h2>Öneri</h2>
+        <p>Eğlenceli müzikler mi arıyorsunuz? İşte size bazı öneriler:</p>
+        <ul>
+          <li><a href="#">Popüler Hit Şarkılar</a></li>
+          <li><a href="#">Yeni Çıkan Albümler</a></li>
+          <li><a href="#">Yabancı Müzik Önerileri</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <script>
+      const aboutButton = document.querySelector("#about-button");
+      const recommendationButton = document.querySelector("#recommendation-button");
+    
+      aboutButton.addEventListener("click", () => {
+        window.open("_ropetfy/hakkinda.html", "_blank");
+      });
+    
+      recommendationButton.addEventListener("click", () => {
+        window.open("_ropetfy/oneri.html", "_blank");
+      });
+    </script>
+    
+
+    <script
+      src="https://kit.fontawesome.com/23cecef777.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  </html>
